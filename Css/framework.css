@@ -1,31 +1,92 @@
-/* Start flex */
+:root {
+    --blue-color : #0075ff;
+    --blue-alt-color : #0d69d5;
+    --orange-color : #f59e0b;
+    --green-color : #22c55e;
+    --red-color : #f44336;
+    --grey-color : #888;
+}
+/* Start box */
 .d-flex {
     display: flex;
 }
 .align-center {
     align-items: center;
 }
-/* End flex */
+.space-between {
+    justify-content: space-between;
+}
+.gap-20 {
+    gap: 20px;
+}
+.d-grid {
+    display: grid;
+}
+.d-block {
+    display: block;
+}
+@media (max-width:767px) {
+    .block-mobile {
+        display: block;
+    }
+    .hide-mobile {
+        display: none;
+    }
+}
+/* End box */
 /* Start padding + margin */
-.p10 {
+.p-10 {
     padding: 10px;
 }
-.p20 {
+.p-15 {
+    padding: 15px;
+}
+.p-20 {
     padding: 20px;
 }
-.m20 {
+.m-0 {
+    margin: 0;
+}
+.m-5 {
+    margin: 5px;
+}
+.m-20 {
     margin: 20px;
 }
 .mt-0 {
     margin-top: 0;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
 }
 /* End padding + margin */
 /* Start color */
 .bg-white {
     background-color: white;
 }
+.bg-blue {
+    background-color: blue;
+}
+.bg-eee {
+    background-color: #eee;
+}
+.c-white {
+    color: white;
+}
 .c-black {
     color: black;
+}
+.c-grey {
+    color: var(--grey-color);
 }
 /* End color */
 /* Start position */
@@ -43,6 +104,11 @@
 .fs-14 {
     font-size: 14px;
 }
+@media (max-width: 767px) {
+    .txt-c-mobile {
+        text-align: center;
+    }
+}
 /* End Font */
 /* Start border */
 .rad-6 {
@@ -52,6 +118,28 @@
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
 }
+.rad-10 {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 /* End border */
+/* Start width + height */
+.w-full {
+    width: 100%;
+}
+.w-fit {
+    width: fit-content;
+}
+/* End width + height */
+/* ------------- Start Compounent ----------- */
+.between-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* ------------- End Compounent ----------- */
 /* Start comment */
 /* End comment */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,50 +11,99 @@
     <link rel="stylesheet" href="Css/master.css">
     <title>Dashboard</title>
 </head>
+
 <body>
-<div class="page d-flex">
-    <div class="sidebar bg-white p-20 p-relative">
-        <h3 class="p-relative txt-c mt-0 ">Ouhri</h3>
-        <ul>
-            <li>
-                <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
-                    <i class="fab fa-youtube fa-fw"></i>
-                    <span>Dashboard</span>
-                </a>
-            </li>
-            <li>
-                <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="settings.html" >
-                    <i class="fab fa-youtube fa-fw"></i>
-                    <span>Settings</span>
-                </a>
-            </li>
-            <li>
-                <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html" >
-                    <i class="fab fa-youtube fa-fw"></i>
-                    <span>Profile</span>
-                </a>
-            </li>
-            <li>
-                <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="projects.html" >
-                    <i class="fab fa-youtube fa-fw"></i>
-                    <span>Projects</span>
-                </a>
-            </li>
-            <li>
-                <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html" >
-                    <i class="fab fa-youtube fa-fw"></i>
-                    <span>Courses</span>
-                </a>
-            </li>
-            <li>
-                <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="freinds.html" >
-                    <i class="fab fa-youtube fa-fw"></i>
-                    <span>Freinds</span>
-                </a>
-            </li>
-        </ul>
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0 ">Ouhri</h3>
+            <ul>
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="far fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="settings.html">
+                        <!-- <i class="fab fa-youtube fa-fw"></i> -->
+                        <!-- fa-gear -->
+                        <i class="fas fa-shield-alt    "></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                        <i class="fa fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="projects.html">
+                        <i class="fa fa-project-diagram fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html">
+                        <i class="fa fa-graduation-cap  fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="freinds.html">
+                        <i class="fa fa-user-friends fa-fw"></i>
+                        <span>Freinds</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
+                        <i class="far fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
+                        <i class="fas fa-plane fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full">
+            <!-- Start Head-->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="Type A Key Word">
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="far fa-bell fa-lg"></i>
+                    </span>
+                    <img src="imgs/avatar-06.png" alt="">
+                </div>
+            </div>
+            <!-- End Head-->
+            <h1 class="p-relative">Dashboard</h1>
+            <div class="wrapper d-grid gap-20">
+                <div class="welcome bg-white rad-10 txt-c-mobile block-mobile ">
+                    <div class="intro p-20 d-flex space-between bg-eee ">
+                        <div>
+                            <h2 class="m-0">Welcome</h2>
+                            <p class="c-grey mt-5 ">Ouhri</p>
+                        </div>
+                        <img class="hide-mobile" src="imgs/welcome.jpg" alt="Welcome">
+                    </div>
+                    <img src="imgs/avatar-06.png" alt="avatar" class="avatar">
+                    <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile ">
+                        <div>Mostafa Ouhri <span class="d-block c-grey fs-14 mt-10 ">Devloper</span></div>
+                        <div>04             <span class="d-block c-grey fs-14 mt-10 ">Projects</span></div>
+                        <div>$8500          <span class="d-block c-grey fs-14 mt-10 ">Earned</span></div>
+                    </div>
+                    <a href="profile.html" class="visit d-block fs-14 rad-6 bg-blue c-white w-fit btn-shape">Profile</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="content">content</div>
-</div>
 </body>
+
 </html>
