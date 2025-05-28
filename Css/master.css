@@ -22,6 +22,10 @@ ul {
     list-style: none;
     padding: 0;
 }
+::selection {
+    background-color: var(--orange-color);
+    color: white;
+}
 ::-webkit-scrollbar {
     width: 15px;
 }
@@ -83,8 +87,6 @@ ul {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-.sidebar ul {}
-.sidebar ul li  {}
 .sidebar ul li a {
     transition: 0.3s;
     margin-bottom: 5px;
@@ -93,7 +95,6 @@ ul {
 .sidebar ul li a.active {
     background-color: #f6f6f6;
 }
-.sidebar ul li a i {}
 .sidebar ul li a span {
     font-size: 14px;
     margin-left: 10px;
@@ -120,8 +121,6 @@ ul {
 .content {
     overflow: hidden;
 }
-.content .head {}
-.content .head .search {}
 .content .head .search::before {
     font-family: "font awesome 5 Free";
     content: "\f002";
@@ -189,6 +188,7 @@ ul {
     grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 @media (max-width: 767px) {
     .wrapper {
@@ -245,5 +245,208 @@ ul {
     }
 }
 /* End welcome widget */
+/* Start Quick Draft Widget*/
+.quick-draft textarea {
+    resize: none ;
+    min-height: 160px;
+}
+.quick-draft .save {
+    margin-left: auto;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.quick-draft .save:hover {
+    background-color: var(--blue-alt-color);
+}
+/* End Quick Draft Widget */
+/* Start Yearly Target Widget */
+.target .target-row .icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+.target .target-row .details {
+    flex: 1;
+}
+.target .target-row .details .progress {
+    height: 4px;
+}
+.target .target-row .details .progress > span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.target .target-row .details .progress > span span{
+    position: absolute;
+    right: -16px;
+    bottom: 16px;
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.target .target-row .details .progress > span span::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.target .target-row .details .progress > .blue span::before{
+    border-top-color: var(--blue-color);
+}
+.target .target-row .details .progress > .orange span::before{
+    border-top-color: var(--orange-color);
+}
+.target .target-row .details .progress > .green span::before{
+    border-top-color: var(--green-color);
+}
+.blue .icon ,
+.blue .progress {
+    background-color: rgb(0 117 255 / 20%);
+} 
+.orange .icon ,
+.orange .progress {
+    background-color: rgb(245 158 11 / 20%);
+} 
+.green .icon ,
+.green .progress {
+    background-color: rgb(34 197 94 / 20%);
+} 
+/* End Yearly Target Widget */
+/* Start Tickets */
+.tickets .box {
+    border: 1px solid #ccc;
+    width: calc(50% - 10px);
+}
+
+/* End Tickets */
+/* Start latest News */
+/* End latest News */
+.latest-news .news-row:not(:last-of-type) {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.latest-news .news-row img {
+    width: 100px;
+    border-radius: 6px;
+    margin-right: 15px;
+}
+.latest-news .news-row .info {
+    flex-grow: 1;
+}
+.latest-news .news-row .info h3 {
+    margin: 0 0 6px;
+}
+@media (max-width: 767px) {
+    .latest-news .news-row {
+        display: block;
+    }  
+    .latest-news .info {
+        text-align: center;
+    }  
+    .latest-news .label {
+        margin: 10px auto;
+        display: block;
+        width: fit-content;
+    } 
+}
+/* Start Tasks */
+.tasks .task-row:not(:last-of-type) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.tasks .task-row .info {
+    flex-grow: 1;
+}
+.tasks .task-row.done {
+    opacity: 0.3;
+}
+.tasks .task-row.done h3,
+.tasks .task-row.done p {
+    text-decoration: line-through;
+}
+.tasks .delete {
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.tasks .delete:hover {
+    color: var(--red-color);
+}
+/* End Tasks */
+/* Start Latest Uploads */
+.latest-uploads ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+.latest-uploads ul li img {
+    width: 40px;
+}
+/* End Latest Uploads */
+/* Start last project widget */
+.last-project ul::before {
+    content: "";
+    position: absolute;
+    left: 11px;
+    width: 2px;
+    height: 100%;
+    background-color: var(--blue-color);
+}
+.last-project ul li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid white;
+    outline: 2px solid var(--blue-color);
+    margin-right: 15px;
+    z-index: 1;
+}
+.last-project ul li.done::before {
+    background-color: var(--blue-color);
+}
+.last-project ul li.current::before {
+    animation: change-color 0.8s infinite ;
+    -webkit-animation: change-color 0.8s infinite ;
+}
+@keyframes change-color {
+    from {
+        background-color: var(--blue-color);
+    }
+    to {
+        background-color: white;
+    }
+}
+.last-project .icon {
+    position: absolute;
+    width: 160px;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+}
+/* End last project widget */
 /* Start comment */
 /* End comment */
