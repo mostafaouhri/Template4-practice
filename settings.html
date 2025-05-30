@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/course-03.jpg" border-radius="50%">
+    <link rel="stylesheet" href="Css/Framework.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/Settings.css">
+    <link rel="stylesheet" href="Css/master.css">
+    <title>Settings</title>
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative">
+            <h3 class="p-relative txt-c mt-0 ">Ouhri</h3>
+            <ul>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index.html">
+                        <i class="far fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="settings.html">
+                        <i class="fas fa-shield-alt    "></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                        <i class="fa fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="projects.html">
+                        <i class="fa fa-project-diagram fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="courses.html">
+                        <i class="fa fa-graduation-cap  fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="freinds.html">
+                        <i class="fa fa-user-friends fa-fw"></i>
+                        <span>Freinds</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
+                        <i class="far fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
+                        <i class="fas fa-plane fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full">
+            <!-- Start Head-->
+            <div class="head bg-white p-15 between-flex">
+                <div class="search p-relative">
+                    <input class="p-10" type="search" placeholder="Type A Key Word">
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="far fa-bell fa-lg"></i>
+                    </span>
+                    <img src="imgs/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- End Head-->
+            <h1 class="p-relative">Settings</h1>
+            <div class="settings-page m-20 d-grid gap-20">
+                <!-- Star Settings Box -->
+                <div class="p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10">Site Control</h2>
+                    <p class="mt-0 mb-20 c-grey fs-15">Control The Website If There Is Maintenace</p>
+                    <div class="mb-15 between-flex">
+                        <div class="">
+                            <span>Website Control</span>
+                            <p class="c-grey mt-5 fs-13">Open/Close Website And Type The Reason</p>
+                        </div>
+                        <div>
+                            <label>
+                                <input class="toggle-checkbox" type="checkbox">
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <textarea name="" class="close-m b-none p-10 rad-6 d-block w-full"
+                        placeholder="Close Messange Content"></textarea>
+                </div>
+                <!-- End  Settings Box -->
+                <!-- Star General Info Box -->
+                <div class="p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10">General Info</h2>
+                    <p class="mt-0 mb-20 c-grey fs-15">General Information About Your Account</p>
+                    <div class="mb-15">
+                        <label class="fs-14 c-grey d-block mb-10">First Name</label>
+                        <input type="text" placeholder="First Name" class="p-10 rad-6 d-block w-full b-ccc" id="first">
+                    </div>
+                    <div class="mb-15">
+                        <label class="fs-14 c-grey d-block mb-10">Last Name</label>
+                        <input type="text" placeholder="Last Name" class="p-10 rad-6 d-block w-full b-ccc" id="last">
+                    </div>
+                    <div>
+                        <label class="fs-14 c-grey d-block mb-10">Email</label>
+                        <input class="p-10 rad-6 d-block w-full b-ccc" type="email" value="m@gmail.com" id="email"
+                            disabled>
+                        <a href="" class="c-blue change">Change</a>
+                    </div>
+                </div>
+                <!-- End  General Info Box -->
+                <!-- Start Security Info box -->
+                <div class="p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10">Security Info</h2>
+                    <p class="mt-0 mb-20 c-grey fs-15">Security Information About Your Account</p>
+                    <div class="sec-box mb-20 between-flex">
+                        <div>
+                            <span>Password</span>
+                            <p class="c-grey mt-5 mb-0 fs-13">Last Change On 25/10/2021</p>
+                        </div>
+                        <a class="button bg-blue btn-shape c-white" href="">Change</a>
+                    </div>
+
+                    <div class="sec-box mb-20 between-flex p-relative">
+                        <div>
+                            <span>Two-Factor Authentication</span>
+                            <p class="c-grey mt-5 mb-0 fs-13">Enable/Disable The Feature</p>
+                        </div>
+                        <label>
+                            <input type="checkbox" class="toggle-checkbox" checked>
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </div>
+                    <div class="sec-box mb-20 between-flex">
+                        <div>
+                            <span>Devices</span>
+                            <p class="c-grey mt-5 mb-0 fs-13">Check The Login Devices List</p>
+                        </div>
+                        <a class="button bg-eee c-black c-white btn-shape" href="">Devices</a>
+                    </div>
+                </div>
+                <!-- End Security Info box -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

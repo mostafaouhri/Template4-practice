@@ -611,3 +611,30 @@ ul {
     margin-left: -20px;
 }
 /* End Project Table*/
+/* Start settings*/
+.settings-page {
+    grid-template-columns: repeat(auto-fill , minmax(500px, 1fr));
+}
+@media (max-width: 767px) {
+    .settings-page {
+        grid-template-columns: minmax(100px, 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+.settings-page .close-m {
+    resize: none;
+    border: 1px solid #ccc;
+    min-height: 150px;
+}
+.settings-page #email {
+    display:  inline-flex;
+    width: calc(100% - 80px);
+}
+.settings-page .change {
+    width: 75px;
+    display: inline-flex;
+    justify-content: center;
+}
+/* End settings*/
