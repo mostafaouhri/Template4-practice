@@ -628,13 +628,171 @@ ul {
     border: 1px solid #ccc;
     min-height: 150px;
 }
-.settings-page #email {
+.settings-page .general-info #email {
     display:  inline-flex;
     width: calc(100% - 80px);
+}
+.settings-page .general-info #email {
+    background-color: #f0f4f8;
+    color: #bbb;
+    cursor: no-drop;
 }
 .settings-page .change {
     width: 75px;
     display: inline-flex;
     justify-content: center;
+}
+.settings-page .social-boxes i {
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    transition: 0.3s;
+}
+.settings-page .social-boxes input {
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    padding-left: 15px;
+    border-radius: 0 6px 6px 0;
+}
+.settings-page .social-boxes > div:focus-within i {
+    color: black;
+}
+.widgets-control .control input[type="checkbox"] {
+    appearance:none;
+    display: none;
+}
+.widgets-control .control label {
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+} 
+.widgets-control .control label::before ,
+.widgets-control .control label::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.widgets-control .control label::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--grey-color);
+} 
+.widgets-control .control label:hover::before {
+    border-color: var(--blue-alt-color);
+}
+.widgets-control .control label::after {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00c";
+    font-weight: 900;
+    background-color: var(--blue-color);
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) rotate(360deg);
+    -webkit-transform: scale(0) rotate(360deg);
+    -moz-transform: scale(0) rotate(360deg);
+    -ms-transform: scale(0) rotate(360deg);
+    -o-transform: scale(0) rotate(360deg);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+} 
+.widgets-control .control input[type="checkbox"]:checked + label::after{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.backup-control input[type="radio"] {
+    appearance: none;
+    display: none;
+}
+.backup-control .date label {
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.backup-control .date label::before,
+.backup-control .date label::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.backup-control .date label::before {
+    top: 50%;
+    left: 0;
+    margin-top: -11px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--grey-color);
+}
+.backup-control .date label::after {
+    width: 12px;
+    height: 12px;
+    background-color: var(--blue-color);
+    top: 3.5px;
+    left: 5px;
+    transform: scale(0);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+.backup-control .date input[type="radio"]:checked + label::before {
+    border-color: var(--blue-alt-color);
+}
+.backup-control .date input[type="radio"]:checked + label::after {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+.backup-control .servers {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+@media (max-width:767px) {
+    .backup-control .servers {
+        flex-wrap: wrap;
+    }
+}
+.backup-control .servers .server {
+    border: 2px solid #eee;
+    position: relative;
+}
+.backup-control .servers .server label {
+    cursor: pointer;
+}
+.backup-control .servers input[type="radio"]:checked + .server {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
 }
 /* End settings*/
