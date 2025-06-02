@@ -863,4 +863,59 @@ ul {
     left: 56px;
     color: var(--blue-color);
 }
+.other-data {}
+@media (max-width: 767px) {
+    .other-data {
+        flex-direction: column;
+    }
+}
+.other-data .my-skills  {
+    flex-grow: 1;
+}
+.other-data .my-skills ul {}
+.other-data .my-skills ul li {
+    padding: 15px 0;
+}
+.other-data .my-skills ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+.other-data .my-skills ul li span{
+    display: inline-flex;
+    padding: 4px 10px;
+    background-color: #eee;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.other-data .my-skills ul li span:not(:last-child) {
+    margin-right: 5px;
+}
+.other-data .activities {
+    flex-grow: 2;
+}
+.other-data .activities .activity:not(:last-child) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.other-data .activities .activity img{
+    width: 64px;
+    margin-right: 10px;
+}
+@media (max-width: 767px) {
+    .other-data .activities .activity {
+        flex-direction: column;
+    }
+    .other-data .activities .activity img {
+        margin-right: 0;
+    }
+    .other-data .activities .activity .date {
+        margin-top: 15px;
+    }
+}
+@media (min-width: 768px) {
+    .other-data .activities .activity .date {
+        margin-left: auto;
+        text-align: right;
+    }
+}
 /* End Profile*/
