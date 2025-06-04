@@ -863,7 +863,6 @@ ul {
     left: 56px;
     color: var(--blue-color);
 }
-.other-data {}
 @media (max-width: 767px) {
     .other-data {
         flex-direction: column;
@@ -872,7 +871,6 @@ ul {
 .other-data .my-skills  {
     flex-grow: 1;
 }
-.other-data .my-skills ul {}
 .other-data .my-skills ul li {
     padding: 15px 0;
 }
@@ -919,3 +917,90 @@ ul {
     }
 }
 /* End Profile*/
+/* Start Projects*/
+.projects-page {
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+}
+@media (max-width: 767px) {
+    .projects-page {
+        grid-template-columns: minmax(200px , 1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }   
+}
+.projects-page .project  .date {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.projects-page h4 {
+         font-weight: 500;
+}
+.projects-page .project .team {
+    position: relative;
+    min-height: 80px;
+}
+.projects-page .project .team a {
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: -20px;
+}
+.projects-page .project .team a:hover {
+    position: relative;
+    z-index: 1;
+}
+.projects-page .project .team img {
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.projects-page .project .works {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+@media (max-width:767px) {
+    .projects-page .project .works {
+        justify-content: flex-start;
+        row-gap: 15px;
+    }}
+.projects-page .project .works span {
+    padding: 3px 8px;
+    margin-left: 5px;
+    width: fit-content;
+}
+.projects-page .project .info {
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+@media (max-width:767px) {
+    .projects-page .project .info {
+        flex-direction: column;
+        row-gap: 15px;
+    }}
+.projects-page .project .info .progress {
+    position: relative;
+    height: 6px;
+    width: 230px;
+    width: 260px;
+    border-radius: 6px;
+}
+@media (max-width : 350px) {
+.projects-page .project .info .progress {
+    width: calc(100% - 10px);
+}
+}
+.projects-page .project .info .progress span {
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+}
+/* End Projects*/
