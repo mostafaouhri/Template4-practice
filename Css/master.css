@@ -23,7 +23,8 @@ ul {
     padding: 0;
 }
 ::selection {
-    background-color: var(--orange-color);
+    /* background-color: var(--orange-color); */
+    background-color: blueviolet;
     color: white;
 }
 ::-webkit-scrollbar {
@@ -56,7 +57,6 @@ ul {
 }
 .sidebar > h3 {
     margin-bottom: 50px;
-    position: relative;
 }
 .sidebar > h3::before ,
 .sidebar > h3::after {
@@ -94,6 +94,10 @@ ul {
 .sidebar ul li a:hover,
 .sidebar ul li a.active {
     background-color: #f6f6f6;
+}
+.sidebar ul li a.active i {
+    color: var(--blue-color);
+    font-weight: bold;
 }
 .sidebar ul li a span {
     font-size: 14px;
@@ -134,11 +138,19 @@ ul {
 }
 .content .head .search input {
     border: 1px solid #ccc;
-    border-radius: 10px;
     margin-left: 5px;
     padding-left: 30px;
     width: 160px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     transition: width 0.3s;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    -o-transition: width 0.3s;
 }
 .content .head .search input:focus {
     width: 200px;
@@ -160,7 +172,12 @@ ul {
     width: 32px;
     height: 32px;
     margin-left: 15px;
+    border: 2px solid var(--orange-color);
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 /* End Content */
 .page h1 {
@@ -209,11 +226,15 @@ ul {
     width: 64px;
     height: 64px;
     border: 2px solid white;
-    border-radius: 50%;
     padding: 2px;
     box-shadow: 0 0 5px #ddd;
     margin-left: 20px;
     margin-top: -32px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 .welcome .body {
     border-top: 1px solid #eee;
@@ -346,8 +367,12 @@ ul {
 }
 .latest-news .news-row img {
     width: 100px;
-    border-radius: 6px;
     margin-right: 15px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 .latest-news .news-row .info {
     flex-grow: 1;
@@ -418,12 +443,16 @@ ul {
     width: 20px;
     height: 20px;
     display: block;
-    border-radius: 50%;
     background-color: white;
     border: 2px solid white;
     outline: 2px solid var(--blue-color);
     margin-right: 15px;
     z-index: 1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 .last-project ul li.done::before {
     background-color: var(--blue-color);
@@ -649,7 +678,15 @@ ul {
     border: 1px solid #ddd;
     border-right: none;
     border-radius: 6px 0 0 6px;
+    -webkit-border-radius: 6px 0 0 6px;
+    -moz-border-radius: 6px 0 0 6px;
+    -ms-border-radius: 6px 0 0 6px;
+    -o-border-radius: 6px 0 0 6px;
     transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 .settings-page .social-boxes input {
     height: 40px;
@@ -657,6 +694,10 @@ ul {
     border: 1px solid #ddd;
     padding-left: 15px;
     border-radius: 0 6px 6px 0;
+    -webkit-border-radius: 0 6px 6px 0;
+    -moz-border-radius: 0 6px 6px 0;
+    -ms-border-radius: 0 6px 6px 0;
+    -o-border-radius: 0 6px 6px 0;
 }
 .settings-page .social-boxes > div:focus-within i {
     color: black;
@@ -824,11 +865,19 @@ ul {
     height: 100%;
     background-color: var(--blue-color);
     border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 .profile-page .info-box .box {
     flex-wrap: wrap;
     border-bottom: 1px solid #eee;
     transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 @media (max-width: 767px) {
     .profile-page .info-box .box {
@@ -878,14 +927,21 @@ ul {
     border-bottom: 1px solid #eee;
 }
 .other-data .my-skills ul li span{
-    display: inline-flex;
-    padding: 4px 10px;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px;
     background-color: #eee;
-    border-radius: 6px;
     font-size: 14px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
-.other-data .my-skills ul li span:not(:last-child) {
-    margin-right: 5px;
+@media (min-width :768px) {
+    .other-data .my-skills ul li span {
+        padding: 5px 10px;
+    }
 }
 .other-data .activities {
     flex-grow: 2;
@@ -992,6 +1048,10 @@ ul {
     width: 230px;
     width: 260px;
     border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 @media (max-width : 350px) {
 .projects-page .project .info .progress {
@@ -1002,5 +1062,56 @@ ul {
     position: absolute;
     height: 100%;
     border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 /* End Projects*/
+/* Start Courses*/
+.courses-page {
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+@media (max-width:767px) {
+    .courses-page {
+        grid-template-columns: minmax(200px,1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }}
+.course {
+    overflow: hidden;
+}
+
+.course img.instructor {
+    position: absolute;
+    width: 60px;
+    border: 2px solid white;
+    top: 15px;
+    left: 15px;
+}
+.course img.cover {
+   max-width: 100%;
+}
+.course .info .text{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+.course .info span {
+    font-weight: bold;
+    font-size: 18px;
+}
+.course .info p {
+    line-height: 1.6;
+}
+.course .info a {
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin: -13.44px auto 0;
+}
+.course .info i {
+    color: var(--blue-color);
+    font-weight: bold;
+}
+/* End Courses*/
