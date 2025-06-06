@@ -22,10 +22,10 @@ a {
 ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 ::selection {
-    /* background-color: var(--orange-color); */
-    background-color: blueviolet;
+    background-color: var(--blue-color);
     color: white;
 }
 ::-webkit-scrollbar {
@@ -1305,3 +1305,69 @@ ul {
 }
 }
 /* End files*/
+/* Start Plans*/
+.plans-page {
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+}
+@media (max-width: 767px) {
+    .plans-page {
+        grid-template-columns:  minmax(250px,1fr);
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+}
+.plan.green ::selection {
+    background-color: var(--green-color);
+}
+.plan.orange ::selection {
+    background-color: var(--orange-color);
+}
+.plan .top {
+    border: 3px solid white;
+    outline: 3px solid transparent;
+}
+.plan.green .top {
+    outline-color: var(--green-color);
+}
+.plan.blue .top {
+    outline-color: var(--blue-color);
+}
+.plan.orange .top {
+    outline-color: var(--orange-color);
+}
+.plan .price {
+    position: relative;
+    font-size: 40px;
+    width: fit-content;
+    margin: auto;
+} 
+.plan .price span {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    font-size: 25px;
+} 
+.plan ul li {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+} 
+.plan ul li .yes{
+    color: var(--green-color);
+} 
+.plan ul li i:not(.yes, .help) {
+    color: var(--red-color);
+}
+.plan ul li i:first-child {
+    margin-right: 5px;
+    font-size: 18px;
+}
+.plan ul li i.help {
+    color: var(--grey-color);
+    margin-left: auto;
+    cursor: pointer;
+}
+/* End Plans*/
