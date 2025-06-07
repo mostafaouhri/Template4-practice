@@ -53,6 +53,10 @@ ul {
 }
 /* Start sidebar */
 .sidebar {
+    position: sticky;
+    left: 0;
+    top: 0;
+    height: 100vh;
     width: 250px;
     box-shadow: 0 0 10px #ddd;
 }
@@ -174,7 +178,6 @@ ul {
     width: 32px;
     height: 32px;
     margin-left: 15px;
-    border: 2px solid var(--orange-color);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -201,7 +204,14 @@ ul {
 }
 .page h1::after {
     background-color: black;
-    width: 40px;
+    width: 0px;
+    animation: f-width 0.7s ease-in 1 forwards;
+    -webkit-animation: f-width 0.7s ease-in 1 forwards;
+}
+@keyframes f-width {
+    100% {
+        width: 120px;
+    }
 }
 .wrapper {
     grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
@@ -1029,6 +1039,18 @@ ul {
         justify-content: flex-start;
         row-gap: 15px;
     }}
+.projects-page .project.blue .works  {
+    color: var(--blue-color);
+}
+.projects-page .project.green .works  {
+    color: var(--green-color);
+}
+.projects-page .project.orange .works  {
+    color: var(--orange-color);
+}
+.projects-page .project.red .works  {
+    color: var(--red-color);
+}
 .projects-page .project .works span {
     padding: 3px 8px;
     margin-left: 5px;
@@ -1235,6 +1257,7 @@ ul {
     position: absolute;
     top: 15px;
     left: 15px;
+    color: var(--blue-color);
 }
 .boxes img {
     width: 60px;
@@ -1369,5 +1392,14 @@ ul {
     color: var(--grey-color);
     margin-left: auto;
     cursor: pointer;
+}
+.plan.green ul li i.help:hover{
+    color: var(--green-color);
+}
+.plan.blue ul li i.help:hover{
+    color: var(--blue-color);
+}
+.plan.orange ul li i.help:hover{
+    color: var(--orange-color);
 }
 /* End Plans*/
